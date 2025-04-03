@@ -1,10 +1,10 @@
 /* ---------------- CONFIGURAÇÕES PADRÃO ----------------*/
 
-header, .menu-nav, .logo, .content, .menu-list ul, .container-title, .container-citation, .container-final, .citation {
+header, .menu-nav, .logo, .content, .menu-list ul, .container-title, .container-citation, .citation, .counter, .timers {
     display: flex;
 }
 
-header, .menu-nav, .logo, .container-title, .container-citation, .container-final, .citation {
+header, .menu-nav, .logo, .container-title, .container-citation, .citation, .counter, .timers {
     align-items: center;
 }
 
@@ -46,6 +46,7 @@ header {
     color: white;
     flex-direction: column;
     align-items: center;
+    font-family: "EB Garamond", serif;
 }
 
 .menu .hamburguer-menu .content .content-child {
@@ -71,9 +72,31 @@ header {
 
 .menu .hamburguer-menu .content .content-child .menu-list li {
     list-style: none;
-    font-family: "EB Garamond", serif;
     font-size: 1.3em;
     font-weight: 500;
+}
+
+.menu .hamburguer-menu .content .counter {
+    height: 30%;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.menu .hamburguer-menu .content .counter .timers {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu .hamburguer-menu .content .counter .timers p {
+    font-size: 1.8em;
+    width: 30%;
+    text-align: end;
+}
+
+.menu .hamburguer-menu .content .counter .timers span {
+    width: 50%;
+    font-size: 1.1em;
 }
 
 .menu .hamburguer-menu .styled {
@@ -97,7 +120,7 @@ header {
     overflow-y: auto;
 }
 
-.container-title, .container-citation, .container-final {
+.container-title, .container-citation {
     height: calc(100vh - 8vh);
     color: white;
     flex-direction: column;
