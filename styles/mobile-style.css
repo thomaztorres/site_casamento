@@ -1,0 +1,125 @@
+/* ---------------- CONFIGURAÇÕES PADRÃO ----------------*/
+
+header, .menu-nav, .logo, .content, .menu-list ul, .container-title, .container-citation, .container-final, .citation {
+    display: flex;
+}
+
+header, .menu-nav, .logo, .container-title, .container-citation, .container-final, .citation {
+    align-items: center;
+}
+
+/* ---------------- AJUSTES CABEÇALHO ----------------*/
+
+header {
+    width: 100vw;
+    height: 8vh;
+    justify-content: center;
+}
+
+.menu-nav {
+    width: 90%;
+    height: 80%;
+    justify-content: space-between;
+}
+
+/* MENU HAMBURGUER */ 
+
+.menu img, .adjust {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.menu .hamburguer-menu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu .hamburguer-menu .content {
+    width: 70%;
+    background-color: #002c70;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu .hamburguer-menu .content .content-child {
+    width: 80%;
+    height: 50%;
+    margin-top: 2.5em;
+}
+
+.menu .hamburguer-menu .content .content-child .close-button {
+    text-align: end;
+}
+
+.menu .hamburguer-menu .content .content-child .menu-list {
+    height: 100%;
+    margin-top: 3em;
+}
+
+.menu .hamburguer-menu .content .content-child .menu-list ul {
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu .hamburguer-menu .content .content-child .menu-list li {
+    list-style: none;
+    font-family: "EB Garamond", serif;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.menu .hamburguer-menu .styled {
+    background-color: black;
+    opacity: 0.5; 
+    width: 30%;
+}
+
+/* LOGO */
+.menu-nav .logo img{
+    height: 3em;
+}
+
+/* ---------------- AJUSTES NAV CONTEÚDO ----------------*/
+
+.max-container {
+    height: 92vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../img/img-teste.jpg);
+    background-repeat: none;
+    background-size: cover;
+    overflow-y: auto;
+}
+
+.container-title, .container-citation, .container-final {
+    height: calc(100vh - 8vh);
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-title img {
+    width: 70vw;
+}
+
+.container-citation .citation {
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.container-citation .citation p {
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.container-citation .reference p {
+    font-size: 1.1em;
+    font-style: normal;
+}
