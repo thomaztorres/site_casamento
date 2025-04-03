@@ -1,10 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 /* ---------------- CONFIGURAÇÕES PADRÃO ----------------*/
 
-header, .menu-nav, .logo, .content, .menu-list ul, .container-title, .container-citation, .citation, .counter, .timers {
+header, .menu-nav, .logo, .content, .menu-list ul, .container-title, .container-citation, .citation, .counter, .timers, .invite {
     display: flex;
 }
 
-header, .menu-nav, .logo, .container-title, .container-citation, .citation, .counter, .timers {
+header, .menu-nav, .logo, .container-title, .container-citation, .citation, .counter, .timers, .invite {
     align-items: center;
 }
 
@@ -42,7 +47,7 @@ header {
 
 .menu .hamburguer-menu .content {
     width: 70%;
-    background-color: #002c70;
+    background-color: #002763;
     color: white;
     flex-direction: column;
     align-items: center;
@@ -145,4 +150,17 @@ header {
 .container-citation .reference p {
     font-size: 1.1em;
     font-style: normal;
+}
+
+/* CONVITE */
+
+.invite {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* ---------------- AJUSTE CONTEÚDO BIGGER-SCREEN ---------------- */
+
+.bigger-screen {
+    display: none;
 }
