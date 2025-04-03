@@ -1,9 +1,18 @@
 
 // ------------------- ABRE MENU -----------------------
-let openMenu = document.getElementById("open-menu");
-let closeMenu = document.getElementById("close-menu");
+let buttonOpenMenu = document.getElementById("open-menu");
+let buttonCloseMenu = document.getElementById("close-menu");
+let clickOut = document.getElementById("styled-container")
 let menu = document.getElementById("menu");
 
-openMenu.addEventListener("click", function () { menu.style.display = "flex"; })
-closeMenu.addEventListener("click", function () { menu.style.display = "none"; })
+buttonOpenMenu.addEventListener("click", function () { 
+    menu.style.display = "flex"; 
+})
 
+buttonCloseMenu.addEventListener("click", function () { 
+    menu.style.display = "none"; 
+})
+
+clickOut.addEventListener("click", function () {
+    menu.style.display = "none";
+})
