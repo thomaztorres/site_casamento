@@ -1,3 +1,9 @@
+<?php 
+
+    $guestName = $_GET["name"];
+
+?>
+
 <html lang="pt_BR">
     <head>
         <meta charset="UTF-8">
@@ -7,7 +13,7 @@
         <link rel="stylesheet" media="screen and (min-width: 601px)" href="./styles/normal-style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rouge+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <title>Thomaz & Nilanda</title>
     </head>
     <body>
@@ -74,13 +80,20 @@
             <div class="invite">
                 <div class="invite-container">
                     <div class="text-invite">
-                        <P>Com as bençãos de Deus convidamos</P>
+                        <p>Com a bênção de Deus e de nossos pais</p>
+                        <p>Temos a alegria de convidar:</p>
                     </div>
                     <div class="invited-name">
-                        <h1>FULANO</h1>
+                        <h1><?php echo($guestName); ?></h1>
                     </div>
                     <div class="text-invite">
-                        <p>Para a celebração do nosso matrimônio</p>
+                        <p>Para testemunhar e celebrar conosco</p>
+                        <p>O sacramento do matrimônio,</p>
+                        <p>No qual entregaremos nossas vidas</p>
+                        <p>Um ao outro diante do altar do Senhor.</p>
+                    </div>
+                    <div class="invite-party">
+                        <p>* Após a cerimônia haverá recepção</p>
                     </div>
                 </div>
             </div>

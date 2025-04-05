@@ -5,11 +5,11 @@
 
 /* ---------------- CONFIGURAÇÕES PADRÃO ----------------*/
 
-header, .menu-nav, .logo, .content, .menu-list ul, .container-title, .container-citation, .citation, .counter, .timers, .invite {
+header, .menu-nav, .logo, .content, .menu-list ul, .container-title, .container-citation, .citation, .counter, .timers, .invite, .text-invite, .invited-name {
     display: flex;
 }
 
-header, .menu-nav, .logo, .container-title, .container-citation, .citation, .counter, .timers, .invite {
+header, .menu-nav, .logo, .container-title, .container-citation, .citation, .counter, .timers, .invite, .text-invite, .invited-name {
     align-items: center;
 }
 
@@ -155,8 +155,41 @@ header {
 /* CONVITE */
 
 .invite {
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
+    justify-content: center;
+}
+
+.invite-container {
+    width: 90%;
+    height: 80%;
+}
+
+.invite-container .text-invite {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.invite-container .text-invite p {
+    font-family: "Outfit", sans-serif;
+    color: #31496a;
+    font-size: 1.05em;
+}
+
+.invite-container .invited-name {
+    font-family: "Caveat", cursive;
+    flex-direction: column;
+    justify-content: center;
+    height: 60%;
+    font-size: 2.3em;
+    color: #002763;
+}
+
+.invite-container .invite-party {
+    margin-top: 4em;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: .8em;
 }
 
 /* ---------------- AJUSTE CONTEÚDO BIGGER-SCREEN ---------------- */
